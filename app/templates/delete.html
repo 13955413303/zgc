@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h3>删除书籍</h3>
+    <hr>
+    <form action="{{ url_for('blue.index') }}" method="post">
+    编号：<input type="text" name="id" >
+        <input type="hidden" name="flag" value="2">
+
+        <input type="submit" value="删除">
+
+    </form>
+{% endblock content %}

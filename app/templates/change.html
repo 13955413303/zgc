@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h3>修改书籍</h3>
+    <hr>
+    <form action="{{ url_for('blue.index') }}" method="post">
+    需修改书籍编号：<input type="text" name="id" >
+        <hr>
+        书名：<input type="text" name="name">
+        作者：<input type="text" name="auth">
+        <input type="hidden" name="flag" value="3">
+
+        <input type="submit" value="修改">
+
+    </form>
+{% endblock content %}
