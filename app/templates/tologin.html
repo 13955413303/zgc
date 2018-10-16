@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h3>登录</h3>
+    <hr>
+    <form action="{{ url_for('blue.login') }}" method="post">
+    姓名：<input type="text" name="name" >
+    号码：<input type="text" name="phone" >
+        <input type="hidden" name="flag" value="4">
+
+        <input type="submit" value="登录">
+        <hr>
+    <h2>{{ contents }}</h2>
+    </form>
+{% endblock content %}

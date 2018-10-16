@@ -12,3 +12,8 @@ class books(db.Model):
         return 'name:%s,auth:%s'%(self.name,self.auth)
 
 
+class user(db.Model):
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(16))
+    phone = db.Column(db.Integer)
+
